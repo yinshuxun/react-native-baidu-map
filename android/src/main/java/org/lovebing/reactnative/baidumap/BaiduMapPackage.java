@@ -29,6 +29,10 @@ public class BaiduMapPackage implements ReactPackage {
         baiduMapViewManager = new BaiduMapViewManager();
         baiduMapViewManager.initSDK(context);
     }
+    
+    public BaiduMapPackage() {
+        baiduMapViewManager = new BaiduMapViewManager();
+    }
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
