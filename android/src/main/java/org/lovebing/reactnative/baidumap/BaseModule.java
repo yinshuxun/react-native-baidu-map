@@ -18,6 +18,11 @@ abstract public class BaseModule extends ReactContextBaseJavaModule {
         super(reactContext);
         context = reactContext;
     }
+    
+    @Override
+    public boolean canOverrideExistingModule() {
+        return true;
+    }
 
     /**
      *
